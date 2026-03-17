@@ -34,7 +34,7 @@ O objetivo arquitetural deste MVP é demonstrar consumo de APIs RESTful de terce
 
     ```bash
     git clone (https://github.com/Eirikr10/Buscador-de-Vagas-Github-Backend-BR.git)
-    cd Buscador-de-Vagas-Github
+    cd cd Buscador-de-Vagas-Github-Backend-BR
 
     # Crie e ative o ambiente virtual
     python3 -m venv venv
