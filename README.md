@@ -33,7 +33,7 @@ O objetivo arquitetural deste MVP é demonstrar consumo de APIs RESTful de terce
 # Clone o repositório
 
     ```bash
-    git clone (https://github.com/Eirikr10/Buscador-de-Vagas-Github.git)
+    git clone (https://github.com/Eirikr10/Buscador-de-Vagas-Github-Backend-BR.git)
     cd Buscador-de-Vagas-Github
 
     # Crie e ative o ambiente virtual
@@ -85,7 +85,7 @@ Para evitar que uma janela preta do terminal (CMD) abra a cada execução, você
     call venv\Scripts\activate
     python main.py
     ```
-    
+
 2. Abra o menu Iniciar do Windows, busque por Agendador de Tarefas (Task Scheduler) e clique em Criar Tarefa...(Create Task).
 
 3. Na aba Geral, dê o nome "Radar de Vagas Python" e marque a opção "Executar estando o usuário logado ou não" (isso roda o script em modo silencioso/background).
