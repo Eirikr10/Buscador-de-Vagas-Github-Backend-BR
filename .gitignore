@@ -1,0 +1,16 @@
+# Variáveis de ambiente (Blindagem do Token e Chat ID do Telegram)
+.env
+
+# Memória de estado local (O histórico de vagas da sua máquina fica só aí)
+historico_vagas.txt
+
+# Logs do sistema operacional (Gerados pelo Cron)
+automacao.log
+
+# Arquivos compilados do Python (Lixo de execução)
+__pycache__/
+*.py[cod]
+
+# Ambiente Virtual (Muito pesado para subir para a nuvem)
+venv/
+env/
