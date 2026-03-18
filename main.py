@@ -1,6 +1,7 @@
 import os
 from buscador_vagas import buscar_vagas_brasil
 from notificador import enviar_alerta_telegram
+from datetime import datetime
 
 # Define o nome do nosso "banco de dados" em arquivo de texto
 ARQUIVO_MEMORIA = "historico_vagas.txt"
@@ -50,10 +51,13 @@ def executar_robo():
             salvar_na_memoria(id_str)
             novas_vagas_encontradas += 1
 
+    agora = datetime.now().strftime("%d/%m/%Y %H:%M:%S")
+
     if novas_vagas_encontradas == 0:
-        print("💤 Nenhuma vaga nova no momento. O robô voltará a dormir.")
+        # Agora o log vai te dizer EXATAMENTE a hora que ele tentou buscar
+        print(f"[{agora}] 💤 Nenhuma vaga nova compatível. O robô voltará a dormir.")
     else:
-        print(f"✅ Varredura concluída. {novas_vagas_encontradas} novos alertas enviados.")
+        print(f"[{agora}] ✅ Varredura concluída. {novas_vagas_encontradas} novos alertas enviados.")
 
 if __name__ == "__main__":
     executar_robo()
